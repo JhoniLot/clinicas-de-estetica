@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Estética — Gestão Clínica Especializada</title>
+    <title>Klin — Gestão Clínica Especializada</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -597,7 +597,7 @@
     <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
 
     <div class="mobile-header">
-        <div class="logo" style="margin:0">Prime Estética</div>
+        <div class="logo" style="margin:0">Klin</div>
         <button class="btn btn-ghost" onclick="toggleSidebar()"><i data-lucide="menu"></i></button>
     </div>
 
@@ -607,7 +607,7 @@
         <aside id="sidebar">
             <div class="logo">
                 <div class="logo-icon"><i data-lucide="shield-check"></i></div>
-                <span id="sidebar-studio-name">Prime Estética</span>
+                <span id="sidebar-studio-name">Klin</span>
             </div>
             <nav>
                 <div class="nav-item active" onclick="showView('dashboard')"><i data-lucide="layout-dashboard"></i><span>Visão Geral</span></div>
@@ -663,7 +663,7 @@
             profissionais: [],
             avaliacoes: [],
             config: {
-                nomeClinica: 'Prime Estética Avançada',
+                nomeClinica: 'Klin Estética Avançada',
                 whatsapp: '5511999999999',
                 apiWebhook: '',
                 horarios: '08:00 - 20:00',
@@ -1630,10 +1630,10 @@
 
         function updateSidebarLogo() {
             const el = document.getElementById('sidebar-studio-name');
-            if (el) el.innerText = state.config.nomeClinica || 'BeautyFlow';
+            if (el) el.innerText = state.config.nomeClinica || 'Klin';
             
             const mobEl = document.querySelector('.mobile-header .logo');
-            if (mobEl) mobEl.innerText = state.config.nomeClinica || 'BeautyFlow';
+            if (mobEl) mobEl.innerText = state.config.nomeClinica || 'Klin';
         }
 
         function saveNovoAgendamento() {
@@ -1833,7 +1833,7 @@
             printWindow.document.write(`
                 <html>
                 <head>
-                    <title>Relatório Mensal - BeautyFlow</title>
+                    <title>Relatório Mensal - Klin</title>
                     <style>
                         body { font-family: 'Inter', sans-serif; padding: 40px; color: #1A1A1A; }
                         .header { border-bottom: 2px solid #C9A84C; padding-bottom: 20px; margin-bottom: 40px; }
@@ -1863,7 +1863,7 @@
                             <div class="stat-val">R$ ${atendimentos.length ? (receita / atendimentos.length).toFixed(2) : '0.00'}</div>
                         </div>
                     </div>
-                    <div class="footer">Gerado automaticamente por BeautyFlow em ${new Date().toLocaleString()}</div>
+                    <div class="footer">Gerado automaticamente por Klin em ${new Date().toLocaleString()}</div>
                     <script>window.print();<\/script>
                 </body>
                 </html>
